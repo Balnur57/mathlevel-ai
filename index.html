@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathLevel AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MathLevel AI</h1>
+    <p>Learn linear equations step by step!</p>
+  </header>
+
+  <main>
+    <h2>Choose your level</h2>
+    <button onclick="setLevel('Foundation')">Foundation</button>
+    <button onclick="setLevel('Standard')">Standard</button>
+    <button onclick="setLevel('Advanced')">Advanced</button>
+
+    <h2 id="level">Foundation</h2>
+    <p id="question">Solve: x + 3 = 7</p>
+
+    <input id="answer" type="number" placeholder="Enter x">
+    <button onclick="checkAnswer()">Check Answer</button>
+    <p id="result"></p>
+
+    <button onclick="showHint()">Show Hint</button>
+    <p id="hint"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
